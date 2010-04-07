@@ -12,5 +12,13 @@
 	<true/>
 	<key>OnDemand</key>
 	<true/>
+	<key>Sockets</key>
+	<dict>
+		<key>SampleListeners</key>
+		<dict>
+			<key>SockServiceName</key>
+			<string>2342</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
