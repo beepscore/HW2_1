@@ -1,0 +1,24 @@
+Last login: Wed Apr  7 17:24:19 on ttys000
+declare -x PROMPT_COMMAND='printf "\e]0;$(pwd -P) \a"' ; cd ~/documents/iphoneprojects/uw/q3/2/tasky
+Beepscore:~ stevebaker$ declare -x PROMPT_COMMAND='printf "\e]0;$(pwd -P) \a"' ; cd ~/documents/iphoneprojects/uw/q3/2/tasky
+Beepscore:tasky stevebaker$ cd /hw2_1
+Beepscore:hw2_1 stevebaker$ launchctl list | grep .*sampledaemon
+Beepscore:hw2_1 stevebaker$ launchctl load edu.uwce.sampledaemon.plist
+Beepscore:hw2_1 stevebaker$ launchctl list | grep .*sampledaemon
+-	0	edu.uwce.sampledaemon
+Beepscore:hw2_1 stevebaker$ telnet localhost 2342
+Trying ::1...
+Connected to localhost.
+Escape character is '^]'.
+blahblahblah
+hello world!
+you said 'blahblahblah
+'
+^]
+telnet> quit
+Connection closed.
+Beepscore:hw2_1 stevebaker$ launchctl list | grep .*sampledaemon
+1693	-	edu.uwce.sampledaemon
+Beepscore:hw2_1 stevebaker$ launchctl unload edu.uwce.sampledaemon.plist
+Beepscore:hw2_1 stevebaker$ launchctl list | grep .*sampledaemon
+Beepscore:hw2_1 stevebaker$ 
