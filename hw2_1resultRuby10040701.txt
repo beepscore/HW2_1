@@ -1,0 +1,15 @@
+Last login: Wed Apr  7 22:07:29 on ttys000
+Beepscore:~ stevebaker$ declare -x PROMPT_COMMAND='printf "\e]0;$(pwd -P) \a"' ; cd ~/documents/iphoneprojects/uw/q3/2/tasky
+Beepscore:tasky stevebaker$ cd /hw2_1
+Beepscore:hw2_1 stevebaker$ ruby sampledaemon.rb
+load_daemon
+-	0	edu.uwce.sampledaemon
+hello world!
+you said 'Hi from ruby script
+'
+/opt/local/lib/ruby/1.8/net/telnet.rb:557:in `waitfor': timed out while waiting for more data (Timeout::Error)
+	from /opt/local/lib/ruby/1.8/net/telnet.rb:692:in `cmd'
+	from sampledaemon.rb:40:in `start_telnet'
+	from sampledaemon.rb:59
+
+Beepscore:hw2_1 stevebaker$
